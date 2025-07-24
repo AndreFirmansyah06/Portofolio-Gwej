@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Style/output.css" />
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -21,31 +24,63 @@
         </div>
         <div class="flex justify-center">
           <div class="image w-[80%] space-y-30 py-20">
-            <div class="item relative">
+            <div class="item relative group">
               <img
                 src="../assets/abstractCapture.png"
                 class="rounded-2xl"
                 alt=""
+                onclick="toggleMobile(this)"
               />
               <div
-                class="detail bg-blue-400 h-[80%] w-full flex justify-center items-center absolute bottom-0 " 
+                class="detail bg-blue-400 h-[80%] w-full group-hover:block transition-all duration-1000 ease-in hidden absolute bottom-0"
+                data-info
               >
-                <div class="techStack flex items-center text-3xl font-bold gap-5">
+                <div
+                  class="techStack flex items-center text-3xl font-bold gap-5"
+                >
                   <p>Tech Stack :</p>
                   <img src="../assets/icons8-html-48.png" alt="" />
                   <img src="../assets/tailwind.png" alt="" />
                   <img src="../assets/icons8-javascript-48.png" alt="" />
                   <p>||</p>
-                  <a href="">Demo <span><i class='bx  bx-arrow-out-down-right-square bx-rotate-270'  ></i> </span></a>
+                  <a href=""
+                    >Demo
+                    <span
+                      ><i
+                        class="bx bx-arrow-out-down-right-square bx-rotate-270"
+                      ></i> </span
+                  ></a>
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item relative group">
               <img
                 src="../assets/cyborgCapture.png"
                 class="rounded-2xl"
                 alt=""
+                onclick="toggleMobile(this)"
               />
+              <div
+                class="detail bg-blue-400 h-[80%] w-full group-hover:block transition-all duration-1000 ease-in hidden absolute bottom-0"
+                data-info
+              >
+                <div
+                  class="techStack flex items-center text-3xl font-bold gap-5"
+                >
+                  <p>Tech Stack :</p>
+                  <img src="../assets/icons8-html-48.png" alt="" />
+                  <img src="../assets/tailwind.png" alt="" />
+                  <img src="../assets/icons8-javascript-48.png" alt="" />
+                  <p>||</p>
+                  <a href=""
+                    >Demo
+                    <span
+                      ><i
+                        class="bx bx-arrow-out-down-right-square bx-rotate-270"
+                      ></i> </span
+                  ></a>
+                </div>
+              </div>
             </div>
             <div class="item">
               <img
@@ -59,4 +94,5 @@
       </div>
     </main>
   </body>
+  <script src="../JS/index.js"></script>
 </html>
