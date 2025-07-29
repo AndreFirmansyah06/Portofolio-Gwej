@@ -1,3 +1,9 @@
+window.va =
+  window.va ||
+  function () {
+    (window.vaq = window.vaq || []).push(arguments);
+  };
+
 function toggleMobile(imgEl) {
   // Cek apakah ini layar mobile
 
