@@ -222,9 +222,6 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
-  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -237,9 +234,6 @@
   .ml-0 {
     margin-left: calc(var(--spacing) * 0);
   }
-  .ml-5 {
-    margin-left: calc(var(--spacing) * 5);
-  }
   .flex {
     display: flex;
   }
@@ -249,55 +243,8 @@
   .table {
     display: table;
   }
-  .aspect-2\/1 {
-    aspect-ratio: 2/1;
-  }
-  .aspect-2\/3 {
-    aspect-ratio: 2/3;
-  }
-  .aspect-auto {
-    aspect-ratio: auto;
-  }
-  .aspect-square {
-    aspect-ratio: 1 / 1;
-  }
-  .size-10 {
-    width: calc(var(--spacing) * 10);
-    height: calc(var(--spacing) * 10);
-  }
-  .size-auto {
-    width: auto;
-    height: auto;
-  }
-  .h-70 {
-    height: calc(var(--spacing) * 70);
-  }
-  .h-80 {
-    height: calc(var(--spacing) * 80);
-  }
-  .h-100 {
-    height: calc(var(--spacing) * 100);
-  }
-  .h-120 {
-    height: calc(var(--spacing) * 120);
-  }
-  .h-130 {
-    height: calc(var(--spacing) * 130);
-  }
-  .h-\[20\%\] {
-    height: 20%;
-  }
-  .h-\[50\%\] {
-    height: 50%;
-  }
   .h-\[50px\] {
     height: 50px;
-  }
-  .h-\[60\%\] {
-    height: 60%;
-  }
-  .h-\[70\%\] {
-    height: 70%;
   }
   .h-\[80\%\] {
     height: 80%;
@@ -311,9 +258,6 @@
   .h-\[90\%\] {
     height: 90%;
   }
-  .h-auto {
-    height: auto;
-  }
   .h-fit {
     height: fit-content;
   }
@@ -322,9 +266,6 @@
   }
   .max-h-120 {
     max-height: calc(var(--spacing) * 120);
-  }
-  .max-h-130 {
-    max-height: calc(var(--spacing) * 130);
   }
   .w-\[30\%\] {
     width: 30%;
@@ -383,9 +324,6 @@
   }
   .items-center {
     align-items: center;
-  }
-  .items-start {
-    align-items: flex-start;
   }
   .justify-center {
     justify-content: center;
@@ -522,8 +460,8 @@
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
   }
-  .py-0 {
-    padding-block: calc(var(--spacing) * 0);
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -543,23 +481,14 @@
   .py-30 {
     padding-block: calc(var(--spacing) * 30);
   }
-  .py-40 {
-    padding-block: calc(var(--spacing) * 40);
-  }
   .pb-30 {
     padding-bottom: calc(var(--spacing) * 30);
   }
   .text-center {
     text-align: center;
   }
-  .indent-2 {
-    text-indent: calc(var(--spacing) * 2);
-  }
   .indent-5 {
     text-indent: calc(var(--spacing) * 5);
-  }
-  .indent-10 {
-    text-indent: calc(var(--spacing) * 10);
   }
   .font-mono {
     font-family: var(--font-mono);
@@ -759,11 +688,6 @@
       }
     }
   }
-  .sm\:h-100 {
-    @media (width >= 40rem) {
-      height: calc(var(--spacing) * 100);
-    }
-  }
   .md\:mr-10 {
     @media (width >= 48rem) {
       margin-right: calc(var(--spacing) * 10);
@@ -772,11 +696,6 @@
   .md\:ml-10 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 10);
-    }
-  }
-  .md\:h-130 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 130);
     }
   }
   .md\:w-\[70\%\] {
@@ -862,61 +781,9 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
-  .lg\:size-1 {
-    @media (width >= 64rem) {
-      width: calc(var(--spacing) * 1);
-      height: calc(var(--spacing) * 1);
-    }
-  }
-  .lg\:size-1\/2 {
-    @media (width >= 64rem) {
-      width: calc(1/2 * 100%);
-      height: calc(1/2 * 100%);
-    }
-  }
-  .lg\:size-1\/4 {
-    @media (width >= 64rem) {
-      width: calc(1/4 * 100%);
-      height: calc(1/4 * 100%);
-    }
-  }
-  .lg\:size-72 {
-    @media (width >= 64rem) {
-      width: calc(var(--spacing) * 72);
-      height: calc(var(--spacing) * 72);
-    }
-  }
-  .lg\:size-96 {
-    @media (width >= 64rem) {
-      width: calc(var(--spacing) * 96);
-      height: calc(var(--spacing) * 96);
-    }
-  }
-  .lg\:size-dvh {
-    @media (width >= 64rem) {
-      width: 100dvh;
-      height: 100dvh;
-    }
-  }
-  .lg\:size-full {
-    @media (width >= 64rem) {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .lg\:h-\[50\%\] {
-    @media (width >= 64rem) {
-      height: 50%;
-    }
-  }
   .lg\:h-\[80\%\] {
     @media (width >= 64rem) {
       height: 80%;
-    }
-  }
-  .lg\:h-full {
-    @media (width >= 64rem) {
-      height: 100%;
     }
   }
   .lg\:w-\[45\%\] {
